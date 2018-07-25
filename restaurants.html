@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<head>
+  <style>
+     /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+     }
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+</head>
+  <body>
+
+
+        <img src="file:///Users/gwc/Desktop/whereabouts.png">
+
+        <p>
+        <a href="explore.html"><button onclick="alert(This link will direct you towards the explore page)">Explore</button></a>
+
+        <a href="aboutus.html"><button onclick="alert(This link will direct you towards the about us page)">About Us</button></a>
+
+        <a href="favorite.html"><button onclick="alert(This link will direct you towards the favorite locations page)">Favorite Places</button></a>
+
+        <a href="comments.html"><button onclick="alert(This link will direct you towards the comments page)">Comments</button></a>
+        </p>
+
+
+
+
+
+
+    <h1>Restaurants</h1>
+
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var sf = {lat: 37.8272, lng: -122.2913};
+  var bai = {lat: 37.255642, lng: -122.03845};
+  var wagon = {lat: 37.292395, lng: -121.91277};
+  var country = {lat: 37.533041, lng: -122.00173};
+  var cascal = {lat: 37.391193, lng: -122.08106};
+  var mac = {lat: 37.800465, lng: -122.43643};
+  var homeroom = {lat:37.828867, long: -122.25993};
+  var orenchi = {lat: 37.336255, lng: -121.99418};
+  var social = {lat: 37.87, lng: -122.27};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: sf});
+  var marker = new google.maps.Marker({position: bai, map: map});
+  var marker2 = new google.maps.Marker({position: wagon, map: map});
+  var marker3 = new google.maps.Marker({position: country, map: map});
+  var marker4 = new google.maps.Marker({position: cascal, map: map});
+  var marker5 = new google.maps.Marker({position: mac, map: map});
+  var marker6 = new google.maps.Marker({position: homeroom, map: map});
+  var marker7 = new google.maps.Marker({position: orenchi, map: map});
+  var marker8 = new google.maps.Marker({position: social, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhdOuuNmV004bscuuEaTmGhyLEs8_1S7g&callback=initMap">
+    </script>
+    <h2>Bai Tong Bistro</h2>
+    <h3>Fenomenal Thai food from a smaller, homey restaurant in Saratoga.</h2>
+    <h3>6011, 14515 Big Basin Way, Saratoga, CA 95070</h3>
+    <h2>Pho Wagon</h2>
+    <h3>Amazing Vietnamese food with beautiful food presentation and welcoming staff in Willow Glen</h3>
+    <h3>1712 Meridian Ave, San Jose, CA 95125</h3>
+    <h2>The Country Way</h2>
+    <h3>Set in an A-frame building, this comfort-food spot serves up quick eats like French toast & eggs. </h3>
+    <h3>5325 Mowry Ave, Fremont, CA 94536</h3>
+    <h2>Cascal</h2>
+    <h3>This lively, colorful restaurant with outdoor dining specializes in Pan-Latin tapas & entrees.</h3>
+    <h3>400 Castro St, Mountain View, CA 94041</h3>
+    <h2>Mac'd</h2>
+    <h3>Bright, counter-serve eatery presenting build-your-own mac & cheese bowls with creative toppings.</h3>
+    <h3>3347 Fillmore St, San Francisco, CA 94123</h3>
+    <h2>Homeroom</h2>
+    <h3>Schoolroom look-alike offers fancy mac 'n' cheese for kids of all ages plus adults-only beer floats.</h3>
+    <h3>400 40th St, Oakland, CA 94609</h3>
+    <h2>Orenchi</h2>
+    <h3>Popular Japanese restaurant for ramen & other delicacies in an intimate setting within a strip mall.</h3>
+    <h3>3540 Homestead Rd, Santa Clara, CA 95051</h3>
+    <h2>Berkeley Social Club</h2>
+    <h3>Lively spot serving eclectic Asian-American fare with beer & wine in expansive quarters.</h3>
+    <h3>2050 University Ave, Berkeley, CA 94704</h3>
+  </body>
+</head>

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<head>
+  <style>
+     /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+     }
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+
+</head>
+  <body>
+
+    <img src="file:///Users/gwc/Desktop/whereabouts.png">
+
+    <p>
+    <a href="explore.html"><button onclick="alert(This link will direct you towards the explore page)">Explore</button></a>
+
+    <a href="aboutus.html"><button onclick="alert(This link will direct you towards the about us page)">About Us</button></a>
+
+    <a href="favorite.html"><button onclick="alert(This link will direct you towards the favorite locations page)">Favorite Places</button></a>
+
+    <a href="comments.html"><button onclick="alert(This link will direct you towards the comments page)">Comments</button></a>
+    </p>
+
+
+
+
+
+
+    
+    <h1>Hiking Spots</h1>
+
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var sf = {lat: 37.8272, lng: -122.2913};
+  var mission = {lat: 37.527638, lng: -121.91628};
+  var dish = {lat: 37.43, lng: -122.16};
+  var gatos = {lat: 37.263722, lng: -121.956757};
+  var lookout = {lat: 37.779708, lng: -122.51157};
+  var vista = {lat: 37.408411, lng: -121.830831};
+  var russian = {lat: 37.370826, lng: -122.21617};
+  var handley = {lat: 37.466471, lng: -122.27014};
+  var tilden = {lat: 37.883095, lng: -122.2374};
+  var sibley = {lat: 37.849167, lng: -122.202848};
+  var picchetti = {lat: 37.289011, lng: -122.09287 };
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: sf});
+  var marker = new google.maps.Marker({position: mission, map: map});
+  var marker2 = new google.maps.Marker({position: dish, map: map});
+  var marker3 = new google.maps.Marker({position: gatos, map: map});
+  var marker4 = new google.maps.Marker({position: lookout, map: map});
+  var marker5 = new google.maps.Marker({position: vista, map: map});
+  var marker6 = new google.maps.Marker({position: russian, map: map});
+  var marker7 = new google.maps.Marker({position: handley, map: map});
+  var marker8 = new google.maps.Marker({position: tilden, map: map});
+  var marker9 = new google.maps.Marker({position: sibley, map: map});
+  var marker10 = new google.maps.Marker({position: picchetti, map: map});
+
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhdOuuNmV004bscuuEaTmGhyLEs8_1S7g&callback=initMap">
+    </script>
+    <h2>Mission Peak</h2>
+    <h3>Climb all the way up to the wooden post at the tip top of Mission Peak! This hike is around 6 miles long.</h3>
+    <h3>43600 Mission Blvd, Ohlone College Fremont, CA 94539</h3>
+    <h2>The Dish</h2>
+    <h3>The Dish is a 4 mile loop that has amazing views of the Bay. It gets hot, so try to go in the morning.</h3>
+    <h3>Stanford Ave & Junipero Serra Blvd, Palo Alto, CA 94305</h3>
+    <h2>Los Gatos Creek Trail</h2>
+    <h3>The trail is filled with trees and flowers and ends in Vasona Park. There are several different paths to take. </h3>
+    <h3>1250 Dell Ave, Campbell, CA 95008</h3>
+    <h2>Land's End Lookout</h2>
+    <h3>One of the prettiest ocean views in the city. Land's End gets a bit chilly, so bring a jacket!</h3>
+    <h3>680 Point Lobos Ave, San Francisco, CA 94121</h3>
+    <h2>Sierra Vista</h2>
+    <h3>The sunrises are amazing at Sierra Vista! You can also bike the trail.</h3>
+    <h3>5341 Sierra Rd, San Jose, CA 95132</h3>
+    <h2>Russian Ridge</h2>
+    <h3>Russian Ridge has amazing views of the Bay's skyline. If you come near sunrise or sunset, you can see the clouds cascading over the mountains!</h3>
+    <h3>Redwood City, CA 94062</h3>
+    <h2>Handley Rock</h2>
+    <h3>Handley Rock is filled with greenery. Everyone loves to climb the rocks, too!</h3>
+    <h3>Handley Trail, Emerald Hills, CA 94062</h3>
+    <h2>Tilden Regional Park</h2>
+    <h3>There are trees, flowers, cacti, waterfalls and so much more at Tilden Regional Park. Makes for a great hike!</h3>
+    <h3>2501 Grizzly Peak Boulevard, Orinda, CA 94563</h3>
+    <h2>Sibley Volcanic Regional Park</h2>
+    <h3>Sibley has amazing views of the Bay and tons of nature.</h3>
+    <h3>6800 Skyline Blvd, Oakland, CA 94611</h3>
+    <h2>Picchetti Ranch Open Space Reserve</h2>
+    <h3>Picchetti has ponds, trees, steams, and shady trails. An amazing hiking area!</h3>
+    <h3>13100 Montebello Rd, Cupertino, CA 95015</h3>
+  </body>
+</head>

@@ -1,0 +1,105 @@
+
+<head>
+  <style>
+     /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+     }
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+</head>
+  <body>
+
+
+    <img src="file:///Users/gwc/Desktop/whereabouts.png">
+
+    <p>
+    <a href="explore.html"><button onclick="alert(This link will direct you towards the explore page)">Explore</button></a>
+
+    <a href="aboutus.html"><button onclick="alert(This link will direct you towards the about us page)">About Us</button></a>
+
+    <a href="favorite.html"><button onclick="alert(This link will direct you towards the favorite locations page)">Favorite Places</button></a>
+
+    <a href="comments.html"><button onclick="alert(This link will direct you towards the comments page)">Comments</button></a>
+    </p>
+
+
+
+
+    <h1>Coffee Places</h1>
+
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var sf = {lat: 37.8272, lng: -122.2913};
+  var sue = {lat: 37.247021, lng: -122.07512};
+  var crema = {lat: 37.331303, lng: -121.90818};
+  var sightglass = {lat: 37.776968, lng: -122.40852};
+  var croissant = {lat: 37.586603, lng: -122.36388};
+  var timeless = {lat: 37.8277, lng: -122.251};
+  var bitter = {lat: 37.3182, lng: -122.03154};
+  var artis = {lat:37.874916, long: -122.32303};
+  var suju = {lat: 37.530166, lng: -121.98268};
+  var blue = {lat: 37.447376, lng: -122.15938};
+  var red = {lat: 37.488069, lng: -122.234528};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: sf});
+  var marker = new google.maps.Marker({position: sue, map: map});
+  var marker2 = new google.maps.Marker({position: crema, map: map});
+  var marker3 = new google.maps.Marker({position: sightglass, map: map});
+  var marker4 = new google.maps.Marker({position: croissant, map: map});
+  var marker5 = new google.maps.Marker({position: timeless, map: map});
+  var marker6 = new google.maps.Marker({position: bitter, map: map});
+  var marker7 = new google.maps.Marker({position: artis, map: map});
+  var marker8 = new google.maps.Marker({position: suju, map: map});
+  var marker9 = new google.maps.Marker({position: blue, map: map});
+  var marker10 = new google.maps.Marker({position: red, map: map});
+
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhdOuuNmV004bscuuEaTmGhyLEs8_1S7g&callback=initMap">
+    </script>
+    <h2>Sue's Gallery Cafe</h2>
+    <h3>Super cute cafe in the quiet Saratoga downtown area! The location is beautiful - surrounded by nature and green everywhere. There is a very peaceful vibe, even though the cafe is usually quite busy, especially during peak hours.</h3>
+    <h3>14665 Big Basin Way, Saratoga, CA 95070</h3>
+    <h2>Crema<h2>
+    <h3>It's also a nice place to study with free wifi (password located on the bottom of your receipt). Staff is friendly and service is usually quick. Drinks and food are tasty and affordable.</h3>
+    <h3>950 The Alameda, San Jose, CA 95126</h3>
+    <h2>Sightglass Coffee</h2>
+    <h3>Sightglass Coffee is one of many third wave coffee shops in San Francisco and this 7th street shop is Sightglass' flagship location (established in 2009). Unlike most other coffee shops and three other Sightglass Coffee physical locations, this branch has a hanging bike rack at the front entrance as well as the affogato bar upstairs.</h3>
+    <h3>270 7th St, San Francisco, CA 94103</h3>
+    <h2>Le Croissant Café</h2>
+    <h3>Small intimate cafe with delicious croissants! The owners are incredibly sweet and doting. The moment you walk in they greet you and it's easy to see why they have regulars. I listened to them greet people they knew and recite their usual orders with a genuine appreciation for their patronage.</h3>
+    <h3>1151 Broadway, Burlingame, CA 94010</h3>
+    <h2>Timeless Coffee</h2>
+    <h3>One of my friends shows me this gem-- absolutely one of my favorite places for coffee and baked treats. I've come here three times since my friend took me the first time and every time I am more and more impressed. I have yet to have something I wasn't impressed with!</h3>
+    <h3>4252 Piedmont Ave, Oakland, CA 94611</h3>
+    <h2>Bitter + Sweet</h2>
+    <h3>This place is pretty cozy and would be a great place to grab a cup of coffee/latte/hot cocoa in the cold weather.</h3>
+    <h3>20560 Town Center Ln, Cupertino, CA 95014</h3>
+    <h2>Artis Coffee</h2>
+    <h3>Fast forward in time and you find Artis Coffee. This place has the best beans in town, and they pair them with some really good and healthy offerings, like gluten-free stuff. This space is also super cool and away from the madness. If you are in the area, check them out. They also sell beans.</h3>
+    <h3>1717 Fourth St B, Berkeley, CA 94710</h3>
+    <h2>Suju's Coffee</h2>
+    <h3>What a great place to study and work! Free WiFi, plenty of seating, good food and drinks, and best of all, the music volume was perfect -- not too loud where you can't focus.</h3>
+    <h3>4949 Stevenson Blvd, Fremont, CA 94538</h3>
+    <h2>Blue Bottle Coffee</h2>
+    <h3>I am a Blue Bottle fanatic and this location is probably my favorite. It's in an incredible spot with so much seating and this indoor / outdoor setting, with two actual coffee bars you can get service from.</h3>
+    <h3>456 University Ave, Palo Alto, CA 94301</h3>
+    <h2>Red Giant Coffee<h2>
+    <h3>BEST COFFEE IN THIS AREA. parking is a bit tricky around here since it is downtown RWC but every time I'm in sequoia station for lunch or groceries, I try to drop by and get a latte here.</h3>
+    <h3>2400 Broadway #110, Redwood City, CA 94063</h3>
+  </body>

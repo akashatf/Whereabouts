@@ -1,0 +1,106 @@
+<head>
+  <style>
+     /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+     }
+  </style>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+  </head>
+    <body>
+
+
+          <img src="file:///Users/gwc/Desktop/whereabouts.png">
+
+          <p>
+          <a href="explore.html"><button onclick="alert(This link will direct you towards the explore page)">Explore</button></a>
+
+          <a href="aboutus.html"><button onclick="alert(This link will direct you towards the about us page)">About Us</button></a>
+
+          <a href="favorite.html"><button onclick="alert(This link will direct you towards the favorite locations page)">Favorite Places</button></a>
+
+          <a href="comments.html"><button onclick="alert(This link will direct you towards the comments page)">Comments</button></a>
+          </p>
+
+
+
+
+
+
+    <h1>Vegan Restaurants</h1>
+
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var sf = {lat: 37.8272, lng: -122.2913};
+  var shizen = {lat: 37.767401, lng: -122.43449};
+  var hooligan = {lat: 37.25, lng: -121.88};
+  var garden = {lat: 37.399186, lng: -122.10853};
+  var sogo = {lat: 37.295376, lng: -122.0314};
+  var butcher = {lat: 37.871393, lng: -122.27156};
+  var toss = {lat: 37.494413, lng: -122.246685};
+  var squeeze = {lat:37.478348, long: -122.18736};
+  var souley = {lat: 37.797024, lng: -122.2761};
+  var reggae = {lat: 37.243522, lng: -121.96048};
+  var kitchen = {lat: 37.443657, lng: -122.17145};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: sf});
+  var marker = new google.maps.Marker({position: shizen, map: map});
+  var marker2 = new google.maps.Marker({position: hooligan, map: map});
+  var marker3 = new google.maps.Marker({position: garden, map: map});
+  var marker4 = new google.maps.Marker({position: sogo, map: map});
+  var marker5 = new google.maps.Marker({position: butcher, map: map});
+  var marker6 = new google.maps.Marker({position: toss, map: map});
+  var marker7 = new google.maps.Marker({position: squeeze, map: map});
+  var marker8 = new google.maps.Marker({position: souley, map: map});
+  var marker9 = new google.maps.Marker({position: reggae, map: map});
+  var marker10 = new google.maps.Marker({position: kitchen, map: map});
+
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhdOuuNmV004bscuuEaTmGhyLEs8_1S7g&callback=initMap">
+    </script>
+    <h2>Shizen Vegan Sushi Bar & Izakaya</h2>
+    <h3>Vegan fare, from faux-sushi & ramen to meatless small plates, in an inventive, wood-decked space.</h3>
+    <h3>370 14th St, San Francisco, CA 94103</h3>
+    <h2>The Happy Hooligan<h2>
+    <h3>No-frills cafe dishing out all-vegan eats plus shakes, juices & sugar-free smoothies.</h3>
+    <h3>1711 Branham Ln # A9, San Jose, CA 95118</h3>
+    <h2>Veggie Garden</h2>
+    <h3>Easygoing restaurant offering vegan takes on classic Chinese dishes such as orange chicken</h3>
+    <h3>2464 W El Camino Real C, Mountain View, CA 94040</h3>
+    <h2>Sogo Tofu</h2>
+    <h3>Low-key takeout spot offering Taiwanese vegetarian dishes, many featuring mock meats.</h3>
+    <h3>1600 S De Anza Blvd, San Jose, CA 95106</h3>
+    <h2>The Butcher's Son</h2>
+    <h3>Charming, industrial-chic bakery & vegan deli for pastries, coffee & creative vegetable-based mains.</h3>
+    <h3>1954 University Ave, Berkeley, CA 94704</h3>
+    <h2>The Toss</h2>
+    <h3>Generous serving of food, friendly staff, and cozy environment.</h3>
+    <h3>1673 Laurel St, San Carlos, CA 94070</h3>
+    <h2>Squeeze</h2>
+    <h3>Colorful local chain serving signature omelets & other breakfast items, plus burgers & cocktails.</h3>
+    <h3>3710 Florence St, Redwood City, CA 94063</h3>
+    <h2>Souley Vegan</h2>
+    <h3>Warm corner eatery preparing vegan versions of Louisiana-style soul food, plus cocktails & desserts</h3>
+    <h3>301 Broadway, Oakland, CA 94607</h3>
+    <h2>Reggae Pot</h2>
+    <h3>This spot checks all boxes of authenticity, from the staff’s accents and the wall-sized portrait of the homeland to the soft plonks and chirps of reggae in the background.</h3>
+    <h3>15495 Los Gatos Blvd suite d, Los Gatos, CA 95032</h3>
+    <h2>True Food Kitchen<h2>
+    <h3>Relaxed, eco-chic chain serving health-conscious fare, including vegan options, plus cocktails.</h3>
+    <h3>180 El Camino Real Suite 1140, Palo Alto, CA 94304</h3>
+  </body>

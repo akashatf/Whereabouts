@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<head>
+  <style>
+     /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+     }
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+</head>
+
+
+
+
+
+
+
+
+
+  <body>
+
+
+
+    <img src="file:///Users/gwc/Desktop/whereabouts.png">
+
+    <p>
+    <a href="explore.html"><button onclick="alert(This link will direct you towards the explore page)">Explore</button></a>
+
+    <a href="aboutus.html"><button onclick="alert(This link will direct you towards the about us page)">About Us</button></a>
+
+    <a href="favorite.html"><button onclick="alert(This link will direct you towards the favorite locations page)">Favorite Places</button></a>
+
+    <a href="comments.html"><button onclick="alert(This link will direct you towards the comments page)">Comments</button></a>
+  </p>
+
+
+  
+    <h1>Instagram Worthy Spots</h1>
+
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var sf = {lat: 37.8272, lng: -122.2913};
+  var clarion = {lat: 37.442679, lng: -122.172714};
+  var santana = {lat: 37.319881, lng: -121.94899};
+  var castro = {lat: 37.388059, lng: -122.0822};
+  var montalvo = {lat: 37.246359, lng: -122.02891};
+  var botanical = {lat: 37.87, lng: -122.26};
+  var carmelite = {lat: 37.34681, lng: -121.95321};
+  var pulgas = {lat: 37.435502, lng: -122.25435};
+  var main = {lat: 37.323062, lng: -122.009782};
+  var sausalito = {lat: 37.8564726816363, lng: -122.4786459582 };
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: sf});
+  var marker = new google.maps.Marker({position: clarion, map: map});
+  var marker2 = new google.maps.Marker({position: santana, map: map});
+  var marker3 = new google.maps.Marker({position: castro, map: map});
+  var marker4 = new google.maps.Marker({position: montalvo, map: map});
+  var marker5 = new google.maps.Marker({position: botanical, map: map});
+  var marker6 = new google.maps.Marker({position: carmelite, map: map});
+  var marker7 = new google.maps.Marker({position: pulgas, map: map});
+  var marker8 = new google.maps.Marker({position: main, map: map});
+  var marker9 = new google.maps.Marker({position: sausalito, map: map});
+
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhdOuuNmV004bscuuEaTmGhyLEs8_1S7g&callback=initMap">
+    </script>
+    <h2>Clarion Alley</h2>
+    <h3>A Mural Project that is an artists' collective formed in October 1992 by a volunteer collective of six residents of the North Mission District, San Francisco</h3>
+    <h3>San Francisco, CA 94110</h3>
+    <h2>Santana Row</h2>
+    <h3>An upscale residential and commercial district of West San Jose in San Jose, California, in Silicon Valley. </h3>
+    <h3>377 Santana Row, San Jose, CA 95128</h3>
+    <h2>Castro Street</h2>
+    <h3>Downtown Mountain View is home to great restaurants and events for all ages, with beautiful architecture and a calm evironment </h3>
+    <h3>Castro St, Mountain View, CA</h3>
+    <h2>Villa Montalvo Arts Center</h2>
+    <h3>The Montalvo Arts Center is a non-profit center for the arts in Saratoga.</h3>
+    <h3>15400 Montalvo Rd, Saratoga, CA 95071</h3>
+    <h2>Berkeley Botanical Gardens</h2>
+    <h3>The University of California Botanical Garden is a 34-acre botanical garden located on the University of California, Berkeley campus, in Strawberry Canyon.</h3>
+    <h3>200 Centennial Dr, Berkeley, CA 94720</h3>
+    <h2>Carmelite Monastery</h2>
+    <h3>A beautiful historic site maintained by nuns and church staff</h3>
+    <h3>1000 Lincoln St, Santa Clara, CA 95050</h3>
+    <h2>Pulgas Water Temple</h2>
+    <h3>The Pulgas Water Temple is a stone structure west of I-280 at 86 Cañada Road, Woodside, California, United States, designed by architect William G. Merchant.</h3>
+    <h3>56 Cañada Road, Redwood City, CA 94062</h3>
+    <h2>Cafe Van Kleef</h2>
+    <h3>Hip watering hole offering craft cocktails & live music in digs packed with funky art & knickknacks.</h3>
+    <h3>1621 Telegraph Ave, Oakland, CA 94612</h3>
+    <h2>Main Street</h2>
+    <h3>A great, clean place to hang out with friends with great food and environment</h3>
+    <h3>19401 Stevens Creek Blvd, Cupertino, CA 95014</h3>
+    <h2>Sausalito</h2>
+    <h3>Sausalito is a city in Marin County, California, across the Golden Gate Strait from San Francisco. It’s known for its Richardson Bay houseboat enclaves, built by artist squatters after WWII. </h3>
+    <h3>Sausalito, California 94965</h3>
+
+
+
+
+
+
+</body>

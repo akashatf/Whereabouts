@@ -1,0 +1,76 @@
+body{
+  font-family: 'Didact Gothic', sans-serif;
+  background-color: white;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+button {
+    background-color: #BDBBB0;
+    color: black;
+    border: 5.75px solid #8A897C;
+    padding: 14px 112px;
+    font-size: 25px;
+    font-family: 'Didact Gothic', sans-serif;
+
+}
+
+p {
+  border-collapse: separate;
+  border-spacing: 100px;
+  border-left: 15px #D2D7DF;
+  background-color: #D2D7DF;
+  border: 10px solid #D2D7DF;
+
+
+}
+
+h3{
+  margin-left: 62%;
+}
+
+
+h4{
+  margin-left: 67%;
+}
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding:inherit;
+    font-weight: lighter;
+    height: 1000px; /* Should be removed. Only for demonstration */
+}
+
+.right {
+  width: 220px;
+
+}
+
+.left{
+  width: 240px;
+
+}
+
+
+.middle {
+  width: 958px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*  color: #476272;
+border-left: 15px #476272;
+background-color: #476272;
+border: 10px solid #476272;
+
+
+padding:10px 10px;
+background-color: #476272;
